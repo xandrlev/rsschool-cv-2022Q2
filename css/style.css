@@ -29,7 +29,6 @@ html {
     margin: 0;
     box-sizing: border-box;
     font-family: 'roboto', sans-serif;
-    /* font-weight: 400; */
 }
 
 body {
@@ -98,14 +97,24 @@ body {
 }
 
 .section__title {
+  position: relative;
   margin: 0 0 20px 0;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 80px;
   font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #d5d5d5;
   background-color: #2c363d;
+}
+
+.section__title::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  width: 60px;
+  height: 30px;
+  background-color: #ff0059;
 }
 
 .section__item {
@@ -133,6 +142,11 @@ span {
   color: #1f1f1f;
 }
 
+pre {
+  border-radius: 3px;
+  background-color: #ece9e9;
+}
+
 .section__link {
   text-decoration: none;
   color: #757f86;
@@ -144,6 +158,9 @@ span {
 }
 
 .photo {
+  font-display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 300px;
 }
 
@@ -186,6 +203,36 @@ h1 {
   color: #ff0059;
 }
 
+.table {
+  display: flex;
+  flex-flow: row wrap;
+  border-radius: 3px;
+  background-color:#ece9e9;
+}
+
+.section__tablelist {
+  margin: 20px;
+}
+
+.table__left, .table__right {
+  width: 50%;
+  text-transform: uppercase;
+}
+
+.table__leftitem {
+  border-top-left-radius: 3px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #6c6c6c;
+}
+
+.table__rightitem {
+  border-top-right-radius: 3px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #898989;
+}
+
 .footer {
   padding: 20px;
   color: #d5d5d5;
@@ -202,15 +249,7 @@ h1 {
   filter: invert(70%);
 }
 
-.footer__rsschool:hover {
-  fill: #ff0059;
-}
-
 .footer__github {
   filter: opacity(70%);
   transform: color 0.5s;
-}
-
-.footer__github:hover {
-  fill: #ff0059;
 }
