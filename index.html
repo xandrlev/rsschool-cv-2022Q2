@@ -1,12 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+    <title>cv</title>
+    <link rel="icon" href="./assets/favicon.ico">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                    <li class="nav__item"><a href="#languages" class="nav__link">Languages</a></li>
+                    <li class="nav__item"><a href="#code" class="nav__link">Code Example</a></li>
+                    <li class="nav__item"><a href="#skils" class="nav__link">Skills/projects</a></li>
+                    <li class="nav__item"><a href="#contacts" class="nav__link">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container main__container">
+
+            <section class="section" id="profile">
+                <div class="profile-title">
+                    <img src="./assets/img/avatar.jpg" alt="My photo" class="photo">
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="name">
+                    <h1>Kovalev
+                        <br>
+                        Alexander
+                    </h1>
+                    <h2 class="name__title">Front-End Developer</h2>
+                </div>
+            </section>
+
+            <section class="section" id="contacts">
+                <h2 class="section__title">Contacts</h2>
+                <ul class="section__list">
+                    <li class="section__item">
+                        <span>Location:</span>
+                        Gomel, Belarus
+                    </li>
+                    <li class="section__item">
+                        <span>Phone:</span>
+                        +375447494430
+                    </li>
+                    <li class="section__item">
+                        <span>E-mail:</span>
+                        <a class="section__link" href="mailto:xandrlev@gmail.com" title="email">xandrlev@gmail.com</a>
+                    </li>
+                    <li class="section__item">
+                        <span>GitHub:</span>
+                        <a class="section__link" href="https://github.com/xandrlev" target="_blank">xandrlev</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="section" id="about">
+                <h2 class="section__title">Summary</h2>
+                <p>
+                    I am 37 years old. I have been working as a system administrator for over 18 years. In my spare
+                    time, I was engaged in the development of web design for sites. Thanks to this, I mastered the
+                    skills of working in Adobe Photoshop and Illustrator. Self-education led to the fact that I was
+                    interested in the process of directly creating websites and applications. Now my goal is to learn a
+                    new front-end development skill.
+                </p>
+            </section>
+
+            <section class="section" id="education">
+                <h2 class="section__title">Education</h2>
+                <ul class="section__list">
+                    <li class="section__item">
+                        <span>University:</span>
+                        Sukhoi State Technical University of Gomel, Radio Electronics Engineer
+                    </li>
+                    <li class="section__item">
+                        <span>Courses:</span>
+                        IT - Academy, Java Core
+                    </li>
+                </ul>
+            </section>
+
+            <section class="section" id="languages">
+                <h2 class="section__title">Languages</h2>
+                <ul class="section__list">
+                    <li class="section__item">
+                        <span>Russian - </span>
+                        native speaker
+                    </li>
+                    <li class="section__item">
+                        <span>English - </span>
+                        Pre Intermediate (A2)
+                    </li>
+                </ul>
+            </section>
+
+            <section class="section" id="code">
+                <h2 class="section__title">Code Example</h2>
+                <pre>
+                    <code>
+                        function isPrime(num) {
+                            for (let i = 2, max = Math.sqrt(num); i <= max; i++) {
+                                if (num % i === 0) {
+                                    return false;
+                                }
+                            }
+                            return num > 1;
+                        }
+                        function getOut(num) {
+                            const primes = [];
+                            for (let i = 2; i <= num; i++) {
+                                if (isPrime(i)) {
+                                    primes.push(i);
+                                }
+                            }
+                            return primes;
+                        }
+                    </code>
+                </pre>
+            </section>
+
+            <section class="section" id="skils">
+                <h2 class="section__title">Skills & Projects</h2>
+                <div class="table">
+                    <div class="table__left">
+                        <div class="table__leftitem">Hard Skills</div>
+                        <ul class="section__list section__tablelist">
+                            <li class="section__item">
+                                <span>HTML</span>
+                            </li>
+                            <li class="section__item">
+                                <span>CSS</span>
+                            </li>
+                            <li class="section__item">
+                                <span>JavaScript</span>
+                            </li>
+                            <li class="section__item">
+                                <span>System Administrator</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="table__left">
+                        <div class="table__rightitem">Soft Skills</div>
+                        <ul class="section__list section__tablelist">
+                            <li class="section__item">
+                                <span>Communication</span>
+                            </li>
+                            <li class="section__item">
+                                <span>Organisation</span>
+                            </li>
+                            <li class="section__item">
+                                <span>Creativity and innovation</span>
+                            </li>
+                            <li class="section__item">
+                                <span>Analytical thinking</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <a class="footer__github" href="https://github.com/xandrlev/" target="_blank">
+                <img src="./assets/img/GitHub.png" alt="Git Hub" width="32" height="32">
+            </a>
+            <p class="footer__year">© 2022 by Alexander Kovalev</p>
+            <a class="footer__rsschool" href="https://rs.school/js/" target="_blank">
+                <img src="./assets/img/rs-logo.png" alt="Rs school" height="32">
+            </a>
+        </div>
+    </footer>
 </body>
+
 </html>
