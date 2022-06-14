@@ -164,6 +164,10 @@ pre {
   width: 300px;
 }
 
+.profile-photo-h2 {
+  display: none;
+}
+
 h1 {
   margin: 100px 0 10px 40px;
   font-size: 50px;
