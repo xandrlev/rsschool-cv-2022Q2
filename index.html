@@ -31,6 +31,7 @@
             <section class="section" id="profile">
                 <div class="profile-title">
                     <img src="./assets/img/avatar.jpg" alt="My photo" class="photo">
+                    <h2 class="profile-photo-h2">AlexKov</h2>
                 </div>
             </section>
 
@@ -110,7 +111,7 @@
                 <pre>
                     <code>
                         function isPrime(num) {
-                            for (let i = 2, max = Math.sqrt(num); i <= max; i++) {
+                            for (let i = 2, max = Math.sqrt(num); i &lt;= max; i++) {
                                 if (num % i === 0) {
                                     return false;
                                 }
@@ -119,7 +120,7 @@
                         }
                         function getOut(num) {
                             const primes = [];
-                            for (let i = 2; i <= num; i++) {
+                            for (let i = 2; i &lt;= num; i++) {
                                 if (isPrime(i)) {
                                     primes.push(i);
                                 }
